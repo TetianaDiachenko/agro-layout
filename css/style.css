@@ -1,0 +1,509 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: system-ui, sans-serif;
+  color: #000;
+}
+
+a {
+  color: #000;
+}
+
+.title-green {
+  font-size: 3vw;
+  font-weight: 400;
+  padding: 10px;
+  border-bottom: 3px solid #65aa44;
+  border-left: 12px solid #65aa44;
+  margin: 0;
+}
+
+/* Header */
+
+.wrapper {
+  background-color: #fbf9fa;
+}
+
+.header {
+  background-image: url(../img/wheat.jpg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-x: left;
+  background-position-y: top;
+  padding: 40px 0 60px;
+}
+
+.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.header nav a {
+  width: 30vw;
+  font-size: 3vw;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.header-content {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 3.4vw;
+  line-height: 1.5;
+  font-weight: 200;
+  padding: 0 40px 40px;
+}
+
+.header-content span {
+  color: #e2ba7b;
+  font-weight: 500;
+}
+
+.header-content-item a {
+  font-weight: 500;
+  padding: 15px 20px;
+  border-left: 2px solid #65aa44;
+  border-right: 2px solid #65aa44;
+}
+
+/* Section 1 companies */
+
+section,
+footer {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.5;
+  padding: 20px 40px;
+}
+
+.companies {
+  background-color: #fbf9fa;
+}
+
+.companies h3 {
+  font-size: 3vw;
+  color: #65aa44;
+  font-weight: 700;
+}
+
+/* Section 2 offer */
+
+.offer-items__item {
+  display: flex;
+  align-items: center;
+}
+
+.offer-items__item p {
+  font-weight: 700;
+}
+
+.car p,
+.cart p,
+.pie p {
+  margin-left: 50px;
+}
+
+.dollar p,
+.planet p {
+  margin-left: 45px;
+}
+
+/* Section 3 price */
+
+.price {
+  display: none;
+}
+
+/* Section 4  benefits*/
+
+.benefits ul {
+  color: #e2ba7b;
+}
+
+.benefits span {
+  color: #000;
+}
+
+/* Section 5  news */
+
+.news {
+  background-color: #fbf9fa;
+}
+
+.news-items {
+  display: flex;
+  align-items: center;
+  background-color: #fbf9fa;
+  margin: 20px 0;
+  box-shadow: 0px 0px 12px 0px #D3D3D3;
+}
+
+.news-img img {
+  width: 22vw;
+  padding: 10px;
+}
+
+.news-content {
+  padding: 20px 0 10px 20px;
+}
+
+.news-content h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.news-content p {
+  margin: 0;
+}
+
+.news-date {
+  color: #808080;
+  font-style: italic;
+  margin-top: 0;
+}
+
+/* Footer */
+
+footer {
+  background-color: #f5f5f5;
+}
+
+footer img {
+  width: 3vw;
+  margin-right: 10px;
+}
+
+.information-title:first-child h4 {
+  margin: 0;
+}
+
+.information:not(:first-child) {
+    display: block;
+}
+
+.information-title {
+  width: 20%;
+  margin-right: 10vw;
+}
+
+.information p {
+  margin-top: 0;
+}
+
+/* Tablet */
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .header {
+    background-size: 55%;
+    padding: 20px 20px 60px 0;
+  }
+
+  .header nav {
+    flex-wrap: nowrap;
+    margin-left: 30vw;
+  }
+
+  .header nav a {
+    font-size: 2vw;
+    line-height: 4vh;
+    font-weight: 200;
+  }
+
+  .header-content {
+    margin-top: 40px;
+    margin-left: auto;
+    max-width: 60vw;
+    text-align: inherit;
+  }
+
+  .header-content h1 {
+    font-size: 3vw;
+    line-height: 1.3;
+    padding: 0 50px 40px 0;
+  }
+
+  .companies-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .companies-items__item {
+    width: 30%;
+  }
+
+  .companies-items__item h3 {
+    margin: 0;
+  }
+
+  .offer-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 70%;
+  }
+
+  .car p, .cart p, .pie p {
+    margin-left: 30px;
+  }
+
+  .dollar p,
+  .planet p {
+    margin-left: 25px;
+  }
+
+  .price {
+    display: block;
+    background-color: #fbf9fa;
+  }
+
+  table {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    border: 1px solid #e2ba7b;
+    border-collapse: collapse;
+  }
+
+  th {
+    border: 3px solid #e2ba7b;
+  }
+
+  tbody th:not(:first-child) {
+    font-weight: 200;
+  }
+
+  .news-img img {
+    width: 15vw;
+  }
+
+  .news-date {
+    padding-bottom: 15px;
+  }
+
+  .information:not(:first-child) {
+    display: flex;
+  }
+
+  .information-title {
+    width: 35%;
+    margin-right: 0;
+  }
+
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+  .header {
+    background-size: 40%;
+    padding: 20px 20px 120px 0;
+  }
+
+  .header nav {
+    flex-wrap: nowrap;
+    margin-left: 30vw;
+  }
+
+  .header nav a {
+    font-size: 1.5vw;
+    font-weight: 200;
+  }
+
+  .header-content {
+    margin-top: 50px;
+    margin-left: auto;
+    max-width: 60vw;
+    text-align: inherit;
+  }
+
+  .header-content h1 {
+    font-size: 2.4vw;
+    line-height: 1.5;
+    padding: 0 50px 40px 0;
+  }
+
+  .header-content-item a {
+    font-size: 1.1vw;
+    font-weight: 400;
+    padding: 15px 30px;
+  }
+
+  section,
+  footer {
+    font-size: 14px;
+  }
+
+  .title-green {
+    font-size: 2.4vw;
+    padding: 0 0 5px 10px;
+    border-bottom: 2px solid #65aa44;
+    border-left: 10px solid #65aa44;
+    margin: 0;
+  }
+
+  .companies-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .companies-items__item {
+    width: 30%;
+  }
+
+  .companies-items__item h3 {
+    margin: 0;
+  }
+
+  .companies h3 {
+    font-size: 2.2vw;
+  }
+
+  .offer-items,
+  .colon1,
+  .colon2 {
+    display: flex;
+  }
+
+  .colon1,
+  .colon2 {
+    justify-content: space-between;
+  }
+
+  .offer-items__item {
+    width: 25%;
+  }
+
+  .colon1 {
+    margin-right: 6vw;
+    width: 50%;
+  }
+
+  .colon2 {
+    width: 22%;
+  }
+
+  .car p, .cart p, .pie p {
+    margin-left: 20px;
+  }
+
+  .dollar p,
+  .planet p {
+    margin-left: 15px;
+  }
+
+  .price {
+    display: block;
+    background-color: #fbf9fa;
+  }
+
+  table {
+
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    border: 1px solid #e2ba7b;
+    border-collapse: collapse;
+  }
+
+  th {
+    border: 3px solid #e2ba7b;
+  }
+
+  tbody th:not(:first-child) {
+    font-weight: 200;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .news-items {
+    width: 33%;
+    padding: 0 10px;
+  }
+
+  .news-img img {
+    width: 10vw;
+    padding: 0px;
+  }
+
+  .news-content {
+    padding: 0 0 0 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .information-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  footer img {
+    margin-bottom: 40px;
+  }
+
+  footer img:first-child {
+    margin-top: 45px;
+  }
+
+  .information-title {
+    width: 37%;
+    margin-right: 32px;
+  }
+
+}
